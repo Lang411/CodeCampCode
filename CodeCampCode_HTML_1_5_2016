@@ -1,0 +1,724 @@
+<html>
+<link href="http://fonts.googleapis.com/css?family=Lobster" rel="stylesheet" type="text/css">
+<style>
+  .thin-red-border {
+    border-color: green;
+    border-width:10px;
+    border-style:solid
+    
+  }
+  
+  .red-text {
+    color: red;
+  }
+
+  h2 {
+    font-family: Lobster, Monospace;
+  }
+
+  p {
+    font-size: 16px;
+    font-family: Monospace;
+  }
+
+  .smaller-image {
+    width: 100px;
+  }
+</style>
+
+<h2 class="red-text">CatPhotoApp</h2>
+
+<img class="smaller-image" src="https://bit.ly/fcc-relaxing-cat">
+
+<p class="red-text">Kitty ipsum dolor sit amet, shed everywhere shed everywhere stretching attack your ankles chase the red dot, hairball run catnip eat the grass sniff.</p>
+<p class="red-text">Purr jump eat the grass rip the couch scratched sunbathe, shed everywhere rip the couch sleep in the sink fluffy fur catnip scratched.</p>
+</html>
+
+<!-- cat page
+------more
+
+<link href="http://fonts.googleapis.com/css?family=Lobster" rel="stylesheet" type="text/css">
+<style>
+  .red-text {
+    color: red;
+  }
+
+  h2 {
+    font-family: Lobster, Monospace;
+  }
+
+  p {
+    font-size: 16px;
+    font-family: Monospace;
+  }
+
+  .thick-green-border {
+    border-color: green;
+    border-width: 10px;
+    border-style: solid;
+    border-radius: 50%;
+  }
+
+  .smaller-image {
+    width: 100px;
+  }
+</style>
+
+<h2 class="red-text">CatPhotoApp</h2>
+
+<p>Click here for <a href="#">cat photos</a>.</p>
+
+<a href="#"><img class="smaller-image thick-green-border" alt="A cute orange cat lying on its back" src="https://bit.ly/fcc-relaxing-cat"></a>
+
+<p class="red-text">Kitty ipsum dolor sit amet, shed everywhere shed everywhere stretching attack your ankles chase the red dot, hairball run catnip eat the grass sniff.</p>
+<p class="red-text">Purr jump eat the grass rip the couch scratched sunbathe, shed everywhere rip the couch sleep in the sink fluffy fur catnip scratched.</p>
+-->
+
+<!--  more radio buttons, check boxes, div and divided background colors
+------more radio buttons, check boxes, div and divided background colors
+<link href="http://fonts.googleapis.com/css?family=Lobster" rel="stylesheet" type="text/css">
+<style>
+  .red-text {
+    color: red;
+  }
+
+  h2 {
+    font-family: Lobster, Monospace;
+  }
+
+  p {
+    font-size: 16px;
+    font-family: Monospace;
+  }
+
+  .thick-green-border {
+    border-color: green;
+    border-width: 10px;
+    border-style: solid;
+    border-radius: 50%;
+  }
+
+  .smaller-image {
+    width: 100px;
+  }
+  .gray-background {
+    background-color: gray;
+  }
+</style>
+
+<h2 class="red-text">CatPhotoApp</h2>
+
+<p>Click here for <a href="#">cat photos</a>.</p>
+
+<a href="#"><img class="smaller-image thick-green-border" alt="A cute orange cat lying on its back" src="https://bit.ly/fcc-relaxing-cat"></a>
+
+<div class="gray-background">
+  <p>Things cats love:</p>
+  <ul>
+    <li>cat nip</li>
+    <li>laser pointers</li>
+    <li>lasagna</li>
+  </ul>
+  <p>Top 3 things cats hate:</p>
+  <ol>
+    <li>flea treatment</li>
+    <li>thunder</li>
+    <li>other cats</li>
+  </ol>
+</div>
+
+<form action="/submit-cat-photo">
+  <label><input type="radio" name="indoor-outdoor" checked> Indoor</label>
+  <label><input type="radio" name="indoor-outdoor"> Outdoor</label>
+  <label><input type="checkbox" name="personality" checked> Loving</label>
+  <label><input type="checkbox" name="personality"> Lazy</label>
+  <label><input type="checkbox" name="personality"> Energetic</label>
+  <input type="text" placeholder="cat photo URL" required>
+  <button type="submit">Submit</button>
+</form>
+-->
+
+<!--  giving ID to elements
+---------giving ID to elements---------
+<link href="http://fonts.googleapis.com/css?family=Lobster" rel="stylesheet" type="text/css">
+<style>
+  .red-text {
+    color: red;
+  }
+
+  h2 {
+    font-family: Lobster, Monospace;
+  }
+
+  p {
+    font-size: 16px;
+    font-family: Monospace;
+  }
+
+  .thick-green-border {
+    border-color: green;
+    border-width: 10px;
+    border-style: solid;
+    border-radius: 50%;
+  }
+
+  .smaller-image {
+    width: 100px;
+  }
+
+  .gray-background {
+    background-color: gray;
+  }
+  
+  #cat-photo-form {
+    background-color:green
+  }
+</style>
+
+<h2 class="red-text">CatPhotoApp</h2>
+
+<p>Click here for <a href="#">cat photos</a>.</p>
+
+<a href="#"><img class="smaller-image thick-green-border" alt="A cute orange cat lying on its back" src="https://bit.ly/fcc-relaxing-cat"></a>
+
+<div class="gray-background">
+  <p>Things cats love:</p>
+  <ul>
+    <li>cat nip</li>
+    <li>laser pointers</li>
+    <li>lasagna</li>
+  </ul>
+  <p>Top 3 things cats hate:</p>
+  <ol>
+    <li>flea treatment</li>
+    <li>thunder</li>
+    <li>other cats</li>
+  </ol>
+</div>
+
+<form action="/submit-cat-photo" id="cat-photo-form">
+  <label><input type="radio" name="indoor-outdoor" checked> Indoor</label>
+  <label><input type="radio" name="indoor-outdoor"> Outdoor</label>
+  <label><input type="checkbox" name="personality" checked> Loving</label>
+  <label><input type="checkbox" name="personality"> Lazy</label>
+  <label><input type="checkbox" name="personality"> Energetic</label>
+  <input type="text" placeholder="cat photo URL" required>
+  <button type="submit">Submit</button>
+</form>
+
+-->
+<!-- Boxes
+<style>
+  .injected-text {
+    margin-bottom: -25px;
+    text-align: center;
+  }
+
+  .box {
+    border-style: solid;
+    border-color: black;
+    border-width: 5px;
+    text-align: center;
+  }
+
+  .yellow-box {
+    background-color: yellow;
+    padding:10px;
+  }
+  
+  .red-box {
+    background-color:red;
+    padding: 20px;
+    margin: 20px;
+  }
+
+  .green-box {
+    background-color: green;
+    padding: 20px;
+    margin: 20px;
+  }
+</style>
+<h5 class="injected-text">margin</h5>
+
+<div class="box yellow-box">
+  <h5 class="box red-box">padding</h5>
+  <h5 class="box green-box">padding</h5>
+</div>
+
+-->
+
+<!-- All example contained in <div> with bootstrap CSS framework
+<link href="http://fonts.googleapis.com/css?family=Lobster" rel="stylesheet" type="text/css">
+<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css"/>
+
+<style>
+  .red-text {
+    color: red;
+  }
+
+  .container-fluid {
+    
+  }
+  h2 {
+    font-family: Lobster, Monospace;
+  }
+
+  p {
+    font-size: 16px;
+    font-family: Monospace;
+  }
+
+  .thick-green-border {
+    border-color: green;
+    border-width: 10px;
+    border-style: solid;
+    border-radius: 50%;
+  }
+
+  .smaller-image {
+    width: 100px;
+  }
+</style>
+<div class="container-fluid">
+<h2 class="red-text">CatPhotoApp</h2>
+
+<p>Click here for <a href="#">cat photos</a>.</p>
+
+<a href="#"><img class="smaller-image thick-green-border" src="https://bit.ly/fcc-relaxing-cat"></a>
+
+
+<p>Things cats love:</p>
+<ul>
+  <li>cat nip</li>
+  <li>laser pointers</li>
+  <li>lasagna</li>
+</ul>
+<p>Top 3 things cats hate:</p>
+<ol>
+  <li>flea treatment</li>
+  <li>thunder</li>
+  <li>other cats</li>
+</ol>
+
+  
+<form action="/submit-cat-photo">
+  <label><input type="radio" name="indoor-outdoor"> Indoor</label>
+  <label><input type="radio" name="indoor-outdoor"> Outdoor</label>
+  <label><input type="checkbox" name="personality"> Loving</label>
+  <label><input type="checkbox" name="personality"> Lazy</label>
+  <label><input type="checkbox" name="personality"> Crazy</label>
+  <input type="text" placeholder="cat photo URL" required>
+  <button type="submit">Submit</button>
+</form>
+</div>
+-->
+<!-- All definied CSS classes with bootstrap buttons
+<link href="http://fonts.googleapis.com/css?family=Lobster" rel="stylesheet" type="text/css">
+<style>
+  .red-text {
+    color: red;
+  }
+
+  h2 {
+    font-family: Lobster, Monospace;
+  }
+
+  p {
+    font-size: 16px;
+    font-family: Monospace;
+  }
+
+  .thick-green-border {
+    border-color: green;
+    border-width: 10px;
+    border-style: solid;
+    border-radius: 50%;
+  }
+
+  .smaller-image {
+    width: 100px;
+  }
+</style>
+
+<div class="container-fluid">
+  <h2 class="red-text text-center">CatPhotoApp</h2>
+
+  <p>Click here for <a href="#">cat photos</a>.</p>
+
+  <a href="#"><img class="smaller-image thick-green-border" src="https://bit.ly/fcc-relaxing-cat"></a>
+
+  <img src="http://bit.ly/fcc-running-cats" class="img-responsive">
+  <div class="row">
+    <div class="col-xs-4">
+      <button class="btn btn-block btn-primary">Like</button>
+    </div>
+    <div class="col-xs-4">
+      <button class="btn btn-block btn-info">Info</button>
+    </div>
+    <div class="col-xs-4">
+      <button class="btn btn-block btn-danger">Delete</button>
+    </div>
+  </div>
+  <p>Things cats love:</p>
+  <ul>
+    <li>cat nip</li>
+    <li>laser pointers</li>
+    <li>lasagna</li>
+  </ul>
+  <p>Top 3 things cats hate:</p>
+  <ol>
+    <li>flea treatment</li>
+    <li>thunder</li>
+    <li>other cats</li>
+  </ol>
+  <form action="/submit-cat-photo">
+    <label><input type="radio" name="indoor-outdoor"> Indoor</label>
+    <label><input type="radio" name="indoor-outdoor"> Outdoor</label>
+    <label><input type="checkbox" name="personality"> Loving</label>
+    <label><input type="checkbox" name="personality"> Lazy</label>
+    <label><input type="checkbox" name="personality"> Crazy</label>
+    <input type="text" placeholder="cat photo URL" required>
+    <button type="submit">Submit</button>
+  </form>
+</div>
+
+-->
+
+<!-- full cat page with Bootstrap styling, buttons, layout, icons, rows, colomns
+<link href="http://fonts.googleapis.com/css?family=Lobster" rel="stylesheet" type="text/css">
+<style>
+  h2 {
+    font-family: Lobster, Monospace;
+  }
+
+  .thick-green-border {
+    border-color: green;
+    border-width: 10px;
+    border-style: solid;
+    border-radius: 50%;
+  }
+
+</style>
+
+<div class="container-fluid">
+  <div class="row">
+    <div class="col-xs-8">
+      <h2 class="text-primary text-center">CatPhotoApp</h2>
+    </div>
+    <div class="col-xs-4">
+      <a href="#"><img class="img-responsive thick-green-border" src="https://bit.ly/fcc-relaxing-cat"></a>
+    </div>
+  </div>
+  <img src="http://bit.ly/fcc-running-cats" class="img-responsive">
+  <div class="row">
+    <div class="col-xs-4">
+      <button class="btn btn-block btn-primary"><i class="fa fa-thumbs-up"></i> Like</button>
+    </div>
+    <div class="col-xs-4">
+      <button class="btn btn-block btn-info"><i class="fa fa-info-circle"></i> Info</button>
+    </div>
+    <div class="col-xs-4">
+      <button class="btn btn-block btn-danger"><i class="fa fa-trash"></i> Delete</button>
+    </div>
+  </div>
+  <p>Things cats <span class="text-danger">love:</span></p>
+  <ul>
+    <li>cat nip</li>
+    <li>laser pointers</li>
+    <li>lasagna</li>
+  </ul>
+  <p>Top 3 things cats hate:</p>
+  <ol>
+    <li>flea treatment</li>
+    <li>thunder</li>
+    <li>other cats</li>
+  </ol>
+  <form action="/submit-cat-photo">
+    <div class="row">
+      <div class="col-xs-6">
+        <label><input type="radio" name="indoor-outdoor"> Indoor</label>
+      </div>
+      <div class="col-xs-6">
+        <label><input type="radio" name="indoor-outdoor"> Outdoor</label>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-xs-4">
+        <label><input type="checkbox" name="personality"> Loving</label>
+      </div>
+      <div class="col-xs-4">
+        <label><input type="checkbox" name="personality"> Lazy</label>
+      </div>
+      <div class="col-xs-4">
+        <label><input type="checkbox" name="personality"> Crazy</label>
+      </div>
+    </div>
+    
+    <div class="row">
+      <div class="col-xs-7">
+    <input type="text" class="form-control" placeholder="cat photo URL" required>
+      </div>
+      
+      <div class="col-xs-5">
+    <button type="submit" class="btn btn-primary"><i class="fa fa-paper-plane"></i> Submit</button>
+      </div>
+    </div>
+    
+  </form>
+</div>
+-->
+
+<!-- Jquary intro and basic functions
+
+<script>
+  $(document).ready(function() {
+    $("button").addClass("animated bounce");
+    $(".well").addClass("animated shake");
+    $("#target3").addClass("animated fadeOut");
+
+  });
+</script>
+
+
+<div class="container-fluid">
+  <h3 class="text-primary text-center">jQuery Playground</h3>
+  <div class="row">
+    <div class="col-xs-6">
+      <h4>#left-well</h4>
+      <div class="well" id="left-well">
+        <button class="btn btn-default target" id="target1">#target1</button>
+        <button class="btn btn-default target" id="target2">#target2</button>
+        <button class="btn btn-default target" id="target3">#target3</button>
+      </div>
+    </div>
+    <div class="col-xs-6">
+      <h4>#right-well</h4>
+      <div class="well" id="right-well">
+        <button class="btn btn-default target" id="target4">#target4</button>
+        <button class="btn btn-default target" id="target5">#target5</button>
+        <button class="btn btn-default target" id="target6">#target6</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+-->
+
+<!-- jQuary color,delete, move in script
+
+<script>
+  $(document).ready(function() {
+    $("#target1").css("color", "red");
+    $("#target1").prop("disabled", true);
+    $("#target4").remove();
+    $("#target2").appendTo("#right-well");
+
+  });
+</script>
+
+<div class="container-fluid">
+  <h3 class="text-primary text-center">jQuery Playground</h3>
+  <div class="row">
+    <div class="col-xs-6">
+      <h4>#left-well</h4>
+      <div class="well" id="left-well">
+        <button class="btn btn-default target" id="target1">#target1</button>
+        <button class="btn btn-default target" id="target2">#target2</button>
+        <button class="btn btn-default target" id="target3">#target3</button>
+      </div>
+    </div>
+    <div class="col-xs-6">
+      <h4>#right-well</h4>
+      <div class="well" id="right-well">
+        <button class="btn btn-default target" id="target4">#target4</button>
+        <button class="btn btn-default target" id="target5">#target5</button>
+        <button class="btn btn-default target" id="target6">#target6</button>
+      </div>
+    </div>
+  </div>
+</div>
+-->
+
+<!-- jQuary append, child, parent,target-nth-class
+
+<script>
+  $(document).ready(function() {
+    $("#target1").css("color", "red");
+    $("#target1").prop("disabled", true);
+    $("#target4").remove();
+    $("#target2").appendTo("#right-well");
+    $("#target5").clone().appendTo("#left-well");
+    $("#target1").parent().css("background-color", "red");
+    $("#right-well").children().css("color", "green");
+    $(".target:nth-child(2)").addClass("animated bounce");
+
+  });
+</script>
+
+<div class="container-fluid">
+  <h3 class="text-primary text-center">jQuery Playground</h3>
+  <div class="row">
+    <div class="col-xs-6">
+      <h4>#left-well</h4>
+      <div class="well" id="left-well">
+        <button class="btn btn-default target" id="target1">#target1</button>
+        <button class="btn btn-default target" id="target2">#target2</button>
+        <button class="btn btn-default target" id="target3">#target3</button>
+      </div>
+    </div>
+    <div class="col-xs-6">
+      <h4>#right-well</h4>
+      <div class="well" id="right-well">
+        <button class="btn btn-default target" id="target4">#target4</button>
+        <button class="btn btn-default target" id="target5">#target5</button>
+        <button class="btn btn-default target" id="target6">#target6</button>
+      </div>
+    </div>
+  </div>
+</div>
+-->
+
+<!-- JavaScript regular expression string searching
+ar myTest = (function() {
+  var testString = "Ada Lovelace and Charles Babbage designed the first computer and the software that would have run on it.";
+  var expressionToGetSoftware = /software/gi;
+
+  // Only change code below this line.
+
+  var expression = /and/gi;
+
+  // Only change code above this line.
+
+  return testString.match(expression).length;
+})();(function(){return myTest;})();
+
+var myTest = (function() {
+
+  var testString = "There are 3 cats but 4 dogs.";
+
+  // Only change code below this line.
+
+  var expression = /\d+/g;
+
+  // Only change code above this line.
+
+  return testString.match(expression).length;
+
+})();(function(){return myTest;})();
+
+\s will match any whitespace, and \S will match anything that isn't whitespace.
+-->
+
+<!-- constructor function to create objects
+var Car = function() {
+  this.wheels = 4;
+  this.engines = 1;
+  this.seats = 1;
+};
+
+// Only change code below this line.
+
+var MotorBike = function() {
+  this.wheels = 2;
+  this.engines = 1;
+  this.seats = 2;
+
+
+};
+
+-->
+
+<!-- Filter Arrays with filter
+ar oldArray = [1,2,3,4,5,6,7,8,9,10];
+var newArray = [];
+
+// Only change code below this line.
+
+newArray = oldArray.filter(function(val) {
+                          return val <= 5;
+                          });
+-->
+
+<!-- Sorting arryas - 
+Smallest to largest
+var array = [1, 12, 21, 2];
+
+// Only change code below this line.
+
+array.sort(function(a, b){
+  return a-b;
+});
+
+Largest to smallest
+var array = [1, 12, 21, 2];
+
+// Only change code below this line.
+
+array.sort(function(a, b){
+  return b-a;
+});
+-->
+
+<!-- reversing an array
+var array = [1,2,3,4,5,6,7];
+var newArray = [];
+
+// Only change code below this line.
+
+newArray = array.reverse();
+-->
+
+<!-- Concatenate Arrays with concat
+var oldArray = [1,2,3];
+var newArray = [];
+
+var concatMe = [4,5,6];
+
+// Only change code below this line.
+
+newArray = oldArray.concat(concatMe);
+-->
+
+<!-- Splitting strings
+var string = "Split me into an array";
+var array = [];
+
+// Only change code below this line.
+
+array = string.split(' ');
+-->
+
+<!-- Join Strings with join
+var joinMe = ["Split","me","into","an","array"];
+var joinedString = '';
+
+// Only change code below this line.
+
+joinedString = joinMe.join(" ");
+-->
+
+<!-- Challange split reverse and join a string
+function reverseString(str) {
+  strArray = str.split("");
+  strArray = strArray.reverse();
+  str = strArray.join("")
+  //console.log(str)
+  return str;
+}
+
+reverseString("hello");
+-->
+
+<!-- Challange factorialize a number
+function factorialize(num) {
+  var temp = 1
+  for (i=1;i<=num;i++) {
+    temp = temp*i;
+  }
+  console.log(temp)
+  num = temp;
+  return num;
+}
+
+factorialize(5);
+-->
