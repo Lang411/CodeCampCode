@@ -15,13 +15,24 @@
 <!--<link rel="stylesheet" type="text/css" href="mystyle.css">-->
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
 
-
-
 <title>Lang Kenney Bio</title>
 <!-- Adding Bootstrap-->
 
 
 <style>
+
+  body {
+      position: relative; 
+  }
+  #section1 {padding-top:50px;height:700px;color: #fff; background-image: url("http://interfacelift.com/wallpaper/D3334bde/04004_theblackandwhiterocky_1440x900.jpg"); background-color: #1E88E5;}
+
+  #section2 {padding-top:50px;height:700px;color: #fff; background-image: url("http://interfacelift.com/wallpaper/D7f846e1/04003_endofthesunrise_1440x900.jpg"); background-color: #673ab7;}
+
+  #section3 {padding-top:50px;height:700px;color: #fff; background-image: url("http://interfacelift.com/wallpaper/D4017dc4/03996_hakonesunset_1440x900.jpg"); background-color: #ff9800;}
+
+  #section4 {padding-top:50px;height:700px;color: #fff; background-image: url("http://interfacelift.com/wallpaper/Dbfa4aec/03994_bixbybridgehazydusk_1440x900.jpg"); background-color: #00bcd4;}
+
+  #section5 {padding-top:50px;height:200px;color: #fff; background-color: #000000;}
 
 table, th, td {
     border: 1px solid black;
@@ -43,42 +54,69 @@ table, th, td {
  
 .row-fluid {height: 100%; display:table-cell; vertical-align: middle;}
 
-.centering {
-  vertical-align: middle;
-}
+.centering {vertical-align: middle;}
+
 </style>
+
 
 
 </head>
 
-
-
-
-<body>
-
-
 <!-- The scrollable area -->
-<body data-spy="scroll" data-target=".navbar" data-offset="50">
-
-<!-- The navbar - The <a> elements are used to jump to a section in the scrollable area -->
 <nav class="navbar navbar-inverse navbar-fixed-top">
-...
-  <ul class="nav navbar-nav">
-    <li><a href="#section1">Section 1</a></li>
-    ...
-</nav>
+  <div class="container-fluid">
+    <div class="navbar-header">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>                        
+      </button>
+      <a class="navbar-brand" href="#">Lang Kenney</a>
+    </div>
+    <div>
+      <div class="collapse navbar-collapse" id="myNavbar">
+        <ul class="nav navbar-nav">
+          <li><a href="#section1">Section Lang Kenney</a></li>
+          <li><a href="#section2">Section About Me</a></li>
+          <li><a href="#section3">Section Projects</a></li>
+          <li><a href="#section4">Section Contact</a></li>
+          <li><a href="#section5">Bottom of page</a></li>
 
-<!-- Section 1 -->
-<div id="section1">
-  <h1>Section 1</h1>
-  <p>Try to scroll this page and look at the navigation bar while scrolling!</p>
-</div>
-...
+        
+        </ul>
 
-</body>
+        <!-- Contact buttons-->
+        <!--<div class="col-sm-8">-->
+        <!-- <div class="well" id="Button-well"> -->
+          <div class="col-xs-1 centering">
+            <button class="btn btn-block btn-primary centering">
+              <i class="fa fa-thumbs-up"></i> Twitter</button>
+          </div>
 
+          <div class="col-xs-1 centering">
+            <button class="btn btn-block btn-info centering">
+              <i class="fa fa-info-circle"></i> GitHub</button>
+          </div>
 
-	<div class="container-fluid">
+          <div class="col-xs-1 centering">
+            <button class="btn btn-block btn-danger centering">
+              <i class="fa fa-trash"></i> LinkedIn</button>
+          </div>
+
+          <div class="col-xs-1 centering<">
+            <button class="btn btn-block btn-dange centering">
+              <i class="fa fa-trash"></i> Free Code Camp</button>
+          </div>
+          <!-- </div> -->
+          <!-- </div> -->
+          <!-- End contact buttons code-->
+
+      </div>
+    </div>
+  </div>
+</nav>  
+
+<!-- <div class="container-fluid">
 
      <div class="row-fluid">
       <div class="col-sm-4">
@@ -87,130 +125,68 @@ table, th, td {
         </div>
       </div>
 
-      <div class="col-sm-8">
-        <div class="well" id="Button-well">
-          <div class="col-sm-3 centering">
-            <button class="btn btn-block btn-primary centering">
-              <i class="fa fa-thumbs-up"></i> Twitter</button>
-          </div>
 
-          <div class="col-sm-3 centering">
-            <button class="btn btn-block btn-info centering">
-              <i class="fa fa-info-circle"></i> GitHub</button>
-          </div>
-
-          <div class="col-sm-3 centering">
-            <button class="btn btn-block btn-danger centering">
-              <i class="fa fa-trash"></i> LinkedIn</button>
-          </div>
-
-          <div class="col-sm-3 centering<">
-            <button class="btn btn-block btn-dange centering">
-              <i class="fa fa-trash"></i> Free Code Camp</button>
-          </div>
 
         </div>
       </div>
     </div>
   </div>
+ -->
+</nav>
 
   <HR SIZE=16pt></HR>
 
-  <div class="container-body">
-<h1>Info: Lang Kenney</h1>
-  </div>
-   <HR SIZE=16pt></HR>
 
-  <div class="container-body">
-    <table>
-About me block
-<tr><th style="text-align:center" colspan=2>Skills:</th></tr>
-<tr>
+<!-- Section 1: Lang Kenney -->
+
+<div id="section1" class="container-fluid">
+  <h1>Lang Kenney:</h1>
+  <p>Lang Kenney</p>
+  <p>WHO, BACKGROUND, EDUCATION, GOALS</p>
+</div>
+
+<!-- Section 2: About me -->
+<div id="section2" class="container-fluid">
+  <h1>About Me:</h1>
+  <p>Try to scroll this section and look at the navigation bar while scrolling! Try to scroll this section and look at the navigation bar while scrolling!</p>
+  <table>
+  <tr><th style="text-align:center" colspan=2>Skills:</th></tr>
+    <tr>
   <td>-HTML</td><td>JavaScript</td>
-</tr>
+    </tr>
 
-<tr>
+  <tr>
   <td>MATLAT</td><td>Python</td>
-</tr>
+    </tr>
 
-<tr><th style="text-align:center" colspan=2>Frameworks</th></tr>
-
-<tr>
+  <tr><th style="text-align:center" colspan=2>Frameworks</th></tr>
+    <tr>
   <td>-Bootstrap 3</td><td>Angular</td>
-</tr>
-<tr>
+  </tr>
+
+  <tr>
   <td>Backbone.js><td>React</td>
-</tr>
+    </tr>
 
   <tr><th style="text-align:center" colspan=2>Programing Languages</th></tr>
   <td>-Swift</td><td>C##</tr>
 
   <tr><th style="text-align:center" colspan=2>Aerospace Engineering</th></tr>
-<td>-STK</td><td>-Creo</td>
-</tr>
+  <td>-STK</td><td>-Creo</td>
+    </tr>
 
-<tr>
+  <tr>
   <td>-Matlab</td><td>-FEM</td>
-
 </table>
-  </div>
- <HR SIZE=16pt></HR>
 
-
-  <div class="container-body">
-Projects block
--Telemetry Viewer
--IOS app
--More to come
-  </div>
+</div>
 
 
 
- <HR SIZE=16pt></HR>
-  <div class="container-body">
-      </div>
 
-      <div class="col-sm-12">
-        <div class="well" id="Button-well">
-          <div class="col-sm-3 centering">
-            <button class="btn btn-block btn-primary centering">
-              <i class="fa fa-thumbs-up"></i> Twitter</button>
-          </div>
-
-          <div class="col-sm-3 centering">
-            <button class="btn btn-block btn-info centering">
-              <i class="fa fa-info-circle"></i> GitHub</button>
-          </div>
-
-          <div class="col-sm-3 centering">
-            <button class="btn btn-block btn-danger centering">
-              <i class="fa fa-trash"></i> LinkedIn</button>
-          </div>
-
-          <div class="col-sm-3 centering<">
-            <button class="btn btn-block btn-dange centering">
-              <i class="fa fa-trash"></i> Free Code Camp</button>
-          </div>
-
-        </div>
-
-  </div>
- <HR SIZE=16pt></HR>
-
-
-  <div class="container-body">
-<h1>Bottom of the page block and copyright block</h1>
-<p1>All images copyright Lang Kenney 2016</p1>
-  </div>
-
-</body>
-</html>
-
-
-
-<!--     -----------Carousel code-----------
+<!-- Carousel code
  <div id="myCarousel" class="carousel slide" data-ride="carousel">
-  <!-- Indicators -->
+  -- Indicators --
   <ol class="carousel-indicators">
     <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
     <li data-target="#myCarousel" data-slide-to="1"></li>
@@ -218,7 +194,7 @@ Projects block
     <li data-target="#myCarousel" data-slide-to="3"></li>
   </ol>
 
-  <!-- Wrapper for slides -->
+  -- Wrapper for slides --
   <div class="carousel-inner" role="listbox">
     <div class="item active">
       <img src="img_chania.jpg" alt="Chania">
@@ -237,7 +213,7 @@ Projects block
     </div>
   </div>
 
-  <!-- Left and right controls -->
+  -- Left and right controls --
   <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
     <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
     <span class="sr-only">Previous</span>
@@ -248,3 +224,61 @@ Projects block
   </a>
 </div> 
 -->
+
+<!-- Section 3: Projects -->
+<div id="section3" class="container-fluid">
+  <h1>Projects:</h1>
+  <p>
+Projects block
+-Telemetry Viewer
+-IOS app
+-More to come</p>
+  <p>Try to scroll this section and look at the navigation bar while scrolling! Try to scroll this section and look at the navigation bar while scrolling!</p>
+</div>
+
+<!-- Section 4: Contact -->
+<div id="section4" class="container-fluid">
+  <h1>Contact:</h1>
+  <p>Here is how to contact me</p>
+<!--     <div class="col-sm-12">
+        <div class="well" id="Button-well"> -->
+          <div class="col-sm-3 centering">
+            <button class="btn btn-block btn-primary centering">
+              <i class="fa fa-thumbs-up"></i> Twitter</button>
+          </div>
+
+          <div class="col-sm-3 centering">
+            <button class="btn btn-block btn-info centering">
+              <i class="fa fa-info-circle"></i> GitHub</button>
+          </div>
+
+          <div class="col-sm-3 centering">
+            <button class="btn btn-block btn-danger centering">
+              <i class="fa fa-trash"></i> LinkedIn</button>
+          </div>
+
+          <div class="col-sm-3 centering<">
+            <button class="btn btn-block btn-dange centering">
+              <i class="fa fa-trash"></i> Free Code Camp</button>
+          </div>
+ <!--          </div>
+
+        </div> -->     
+</div>
+
+<!-- Section 5: Bottom of page -->
+<div id="section5" class="container-fluid">
+  <h1>In Close</h1>
+  <p>All images copyright ImageFaceLift.com and their individual owners</p>
+  <p>Thanks for coming</p>
+</body>
+</html>
+
+
+<!--           <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">Section 4 <span class="caret"></span></a>
+            <ul class="dropdown-menu">
+              <li><a href="#section41">Section 4-1</a></li>
+              <li><a href="#section42">Section 4-2</a></li>
+            </ul>
+          </li> -->
+
