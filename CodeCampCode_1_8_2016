@@ -1,0 +1,1021 @@
+<html>
+<link href="http://fonts.googleapis.com/css?family=Lobster" rel="stylesheet" type="text/css">
+<style>
+  .thin-red-border {
+    border-color: green;
+    border-width:10px;
+    border-style:solid
+    
+  }
+  
+  .red-text {
+    color: red;
+  }
+
+  h2 {
+    font-family: Lobster, Monospace;
+  }
+
+  p {
+    font-size: 16px;
+    font-family: Monospace;
+  }
+
+  .smaller-image {
+    width: 100px;
+  }
+</style>
+
+<h2 class="red-text">CatPhotoApp</h2>
+
+<img class="smaller-image" src="https://bit.ly/fcc-relaxing-cat">
+
+<p class="red-text">Kitty ipsum dolor sit amet, shed everywhere shed everywhere stretching attack your ankles chase the red dot, hairball run catnip eat the grass sniff.</p>
+<p class="red-text">Purr jump eat the grass rip the couch scratched sunbathe, shed everywhere rip the couch sleep in the sink fluffy fur catnip scratched.</p>
+</html>
+
+<!-- cat page
+------more
+
+<link href="http://fonts.googleapis.com/css?family=Lobster" rel="stylesheet" type="text/css">
+<style>
+  .red-text {
+    color: red;
+  }
+
+  h2 {
+    font-family: Lobster, Monospace;
+  }
+
+  p {
+    font-size: 16px;
+    font-family: Monospace;
+  }
+
+  .thick-green-border {
+    border-color: green;
+    border-width: 10px;
+    border-style: solid;
+    border-radius: 50%;
+  }
+
+  .smaller-image {
+    width: 100px;
+  }
+</style>
+
+<h2 class="red-text">CatPhotoApp</h2>
+
+<p>Click here for <a href="#">cat photos</a>.</p>
+
+<a href="#"><img class="smaller-image thick-green-border" alt="A cute orange cat lying on its back" src="https://bit.ly/fcc-relaxing-cat"></a>
+
+<p class="red-text">Kitty ipsum dolor sit amet, shed everywhere shed everywhere stretching attack your ankles chase the red dot, hairball run catnip eat the grass sniff.</p>
+<p class="red-text">Purr jump eat the grass rip the couch scratched sunbathe, shed everywhere rip the couch sleep in the sink fluffy fur catnip scratched.</p>
+-->
+
+<!--  more radio buttons, check boxes, div and divided background colors
+------more radio buttons, check boxes, div and divided background colors
+<link href="http://fonts.googleapis.com/css?family=Lobster" rel="stylesheet" type="text/css">
+<style>
+  .red-text {
+    color: red;
+  }
+
+  h2 {
+    font-family: Lobster, Monospace;
+  }
+
+  p {
+    font-size: 16px;
+    font-family: Monospace;
+  }
+
+  .thick-green-border {
+    border-color: green;
+    border-width: 10px;
+    border-style: solid;
+    border-radius: 50%;
+  }
+
+  .smaller-image {
+    width: 100px;
+  }
+  .gray-background {
+    background-color: gray;
+  }
+</style>
+
+<h2 class="red-text">CatPhotoApp</h2>
+
+<p>Click here for <a href="#">cat photos</a>.</p>
+
+<a href="#"><img class="smaller-image thick-green-border" alt="A cute orange cat lying on its back" src="https://bit.ly/fcc-relaxing-cat"></a>
+
+<div class="gray-background">
+  <p>Things cats love:</p>
+  <ul>
+    <li>cat nip</li>
+    <li>laser pointers</li>
+    <li>lasagna</li>
+  </ul>
+  <p>Top 3 things cats hate:</p>
+  <ol>
+    <li>flea treatment</li>
+    <li>thunder</li>
+    <li>other cats</li>
+  </ol>
+</div>
+
+<form action="/submit-cat-photo">
+  <label><input type="radio" name="indoor-outdoor" checked> Indoor</label>
+  <label><input type="radio" name="indoor-outdoor"> Outdoor</label>
+  <label><input type="checkbox" name="personality" checked> Loving</label>
+  <label><input type="checkbox" name="personality"> Lazy</label>
+  <label><input type="checkbox" name="personality"> Energetic</label>
+  <input type="text" placeholder="cat photo URL" required>
+  <button type="submit">Submit</button>
+</form>
+-->
+
+<!--  giving ID to elements
+---------giving ID to elements---------
+<link href="http://fonts.googleapis.com/css?family=Lobster" rel="stylesheet" type="text/css">
+<style>
+  .red-text {
+    color: red;
+  }
+
+  h2 {
+    font-family: Lobster, Monospace;
+  }
+
+  p {
+    font-size: 16px;
+    font-family: Monospace;
+  }
+
+  .thick-green-border {
+    border-color: green;
+    border-width: 10px;
+    border-style: solid;
+    border-radius: 50%;
+  }
+
+  .smaller-image {
+    width: 100px;
+  }
+
+  .gray-background {
+    background-color: gray;
+  }
+  
+  #cat-photo-form {
+    background-color:green
+  }
+</style>
+
+<h2 class="red-text">CatPhotoApp</h2>
+
+<p>Click here for <a href="#">cat photos</a>.</p>
+
+<a href="#"><img class="smaller-image thick-green-border" alt="A cute orange cat lying on its back" src="https://bit.ly/fcc-relaxing-cat"></a>
+
+<div class="gray-background">
+  <p>Things cats love:</p>
+  <ul>
+    <li>cat nip</li>
+    <li>laser pointers</li>
+    <li>lasagna</li>
+  </ul>
+  <p>Top 3 things cats hate:</p>
+  <ol>
+    <li>flea treatment</li>
+    <li>thunder</li>
+    <li>other cats</li>
+  </ol>
+</div>
+
+<form action="/submit-cat-photo" id="cat-photo-form">
+  <label><input type="radio" name="indoor-outdoor" checked> Indoor</label>
+  <label><input type="radio" name="indoor-outdoor"> Outdoor</label>
+  <label><input type="checkbox" name="personality" checked> Loving</label>
+  <label><input type="checkbox" name="personality"> Lazy</label>
+  <label><input type="checkbox" name="personality"> Energetic</label>
+  <input type="text" placeholder="cat photo URL" required>
+  <button type="submit">Submit</button>
+</form>
+
+-->
+<!-- Boxes
+<style>
+  .injected-text {
+    margin-bottom: -25px;
+    text-align: center;
+  }
+
+  .box {
+    border-style: solid;
+    border-color: black;
+    border-width: 5px;
+    text-align: center;
+  }
+
+  .yellow-box {
+    background-color: yellow;
+    padding:10px;
+  }
+  
+  .red-box {
+    background-color:red;
+    padding: 20px;
+    margin: 20px;
+  }
+
+  .green-box {
+    background-color: green;
+    padding: 20px;
+    margin: 20px;
+  }
+</style>
+<h5 class="injected-text">margin</h5>
+
+<div class="box yellow-box">
+  <h5 class="box red-box">padding</h5>
+  <h5 class="box green-box">padding</h5>
+</div>
+
+-->
+
+<!-- All example contained in <div> with bootstrap CSS framework
+<link href="http://fonts.googleapis.com/css?family=Lobster" rel="stylesheet" type="text/css">
+<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css"/>
+
+<style>
+  .red-text {
+    color: red;
+  }
+
+  .container-fluid {
+    
+  }
+  h2 {
+    font-family: Lobster, Monospace;
+  }
+
+  p {
+    font-size: 16px;
+    font-family: Monospace;
+  }
+
+  .thick-green-border {
+    border-color: green;
+    border-width: 10px;
+    border-style: solid;
+    border-radius: 50%;
+  }
+
+  .smaller-image {
+    width: 100px;
+  }
+</style>
+<div class="container-fluid">
+<h2 class="red-text">CatPhotoApp</h2>
+
+<p>Click here for <a href="#">cat photos</a>.</p>
+
+<a href="#"><img class="smaller-image thick-green-border" src="https://bit.ly/fcc-relaxing-cat"></a>
+
+
+<p>Things cats love:</p>
+<ul>
+  <li>cat nip</li>
+  <li>laser pointers</li>
+  <li>lasagna</li>
+</ul>
+<p>Top 3 things cats hate:</p>
+<ol>
+  <li>flea treatment</li>
+  <li>thunder</li>
+  <li>other cats</li>
+</ol>
+
+  
+<form action="/submit-cat-photo">
+  <label><input type="radio" name="indoor-outdoor"> Indoor</label>
+  <label><input type="radio" name="indoor-outdoor"> Outdoor</label>
+  <label><input type="checkbox" name="personality"> Loving</label>
+  <label><input type="checkbox" name="personality"> Lazy</label>
+  <label><input type="checkbox" name="personality"> Crazy</label>
+  <input type="text" placeholder="cat photo URL" required>
+  <button type="submit">Submit</button>
+</form>
+</div>
+-->
+<!-- All definied CSS classes with bootstrap buttons
+<link href="http://fonts.googleapis.com/css?family=Lobster" rel="stylesheet" type="text/css">
+<style>
+  .red-text {
+    color: red;
+  }
+
+  h2 {
+    font-family: Lobster, Monospace;
+  }
+
+  p {
+    font-size: 16px;
+    font-family: Monospace;
+  }
+
+  .thick-green-border {
+    border-color: green;
+    border-width: 10px;
+    border-style: solid;
+    border-radius: 50%;
+  }
+
+  .smaller-image {
+    width: 100px;
+  }
+</style>
+
+<div class="container-fluid">
+  <h2 class="red-text text-center">CatPhotoApp</h2>
+
+  <p>Click here for <a href="#">cat photos</a>.</p>
+
+  <a href="#"><img class="smaller-image thick-green-border" src="https://bit.ly/fcc-relaxing-cat"></a>
+
+  <img src="http://bit.ly/fcc-running-cats" class="img-responsive">
+  <div class="row">
+    <div class="col-xs-4">
+      <button class="btn btn-block btn-primary">Like</button>
+    </div>
+    <div class="col-xs-4">
+      <button class="btn btn-block btn-info">Info</button>
+    </div>
+    <div class="col-xs-4">
+      <button class="btn btn-block btn-danger">Delete</button>
+    </div>
+  </div>
+  <p>Things cats love:</p>
+  <ul>
+    <li>cat nip</li>
+    <li>laser pointers</li>
+    <li>lasagna</li>
+  </ul>
+  <p>Top 3 things cats hate:</p>
+  <ol>
+    <li>flea treatment</li>
+    <li>thunder</li>
+    <li>other cats</li>
+  </ol>
+  <form action="/submit-cat-photo">
+    <label><input type="radio" name="indoor-outdoor"> Indoor</label>
+    <label><input type="radio" name="indoor-outdoor"> Outdoor</label>
+    <label><input type="checkbox" name="personality"> Loving</label>
+    <label><input type="checkbox" name="personality"> Lazy</label>
+    <label><input type="checkbox" name="personality"> Crazy</label>
+    <input type="text" placeholder="cat photo URL" required>
+    <button type="submit">Submit</button>
+  </form>
+</div>
+
+-->
+
+<!-- full cat page with Bootstrap styling, buttons, layout, icons, rows, colomns
+<link href="http://fonts.googleapis.com/css?family=Lobster" rel="stylesheet" type="text/css">
+<style>
+  h2 {
+    font-family: Lobster, Monospace;
+  }
+
+  .thick-green-border {
+    border-color: green;
+    border-width: 10px;
+    border-style: solid;
+    border-radius: 50%;
+  }
+
+</style>
+
+<div class="container-fluid">
+  <div class="row">
+    <div class="col-xs-8">
+      <h2 class="text-primary text-center">CatPhotoApp</h2>
+    </div>
+    <div class="col-xs-4">
+      <a href="#"><img class="img-responsive thick-green-border" src="https://bit.ly/fcc-relaxing-cat"></a>
+    </div>
+  </div>
+  <img src="http://bit.ly/fcc-running-cats" class="img-responsive">
+  <div class="row">
+    <div class="col-xs-4">
+      <button class="btn btn-block btn-primary"><i class="fa fa-thumbs-up"></i> Like</button>
+    </div>
+    <div class="col-xs-4">
+      <button class="btn btn-block btn-info"><i class="fa fa-info-circle"></i> Info</button>
+    </div>
+    <div class="col-xs-4">
+      <button class="btn btn-block btn-danger"><i class="fa fa-trash"></i> Delete</button>
+    </div>
+  </div>
+  <p>Things cats <span class="text-danger">love:</span></p>
+  <ul>
+    <li>cat nip</li>
+    <li>laser pointers</li>
+    <li>lasagna</li>
+  </ul>
+  <p>Top 3 things cats hate:</p>
+  <ol>
+    <li>flea treatment</li>
+    <li>thunder</li>
+    <li>other cats</li>
+  </ol>
+  <form action="/submit-cat-photo">
+    <div class="row">
+      <div class="col-xs-6">
+        <label><input type="radio" name="indoor-outdoor"> Indoor</label>
+      </div>
+      <div class="col-xs-6">
+        <label><input type="radio" name="indoor-outdoor"> Outdoor</label>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-xs-4">
+        <label><input type="checkbox" name="personality"> Loving</label>
+      </div>
+      <div class="col-xs-4">
+        <label><input type="checkbox" name="personality"> Lazy</label>
+      </div>
+      <div class="col-xs-4">
+        <label><input type="checkbox" name="personality"> Crazy</label>
+      </div>
+    </div>
+    
+    <div class="row">
+      <div class="col-xs-7">
+    <input type="text" class="form-control" placeholder="cat photo URL" required>
+      </div>
+      
+      <div class="col-xs-5">
+    <button type="submit" class="btn btn-primary"><i class="fa fa-paper-plane"></i> Submit</button>
+      </div>
+    </div>
+    
+  </form>
+</div>
+-->
+
+<!-- Jquary intro and basic functions
+
+<script>
+  $(document).ready(function() {
+    $("button").addClass("animated bounce");
+    $(".well").addClass("animated shake");
+    $("#target3").addClass("animated fadeOut");
+
+  });
+</script>
+
+
+<div class="container-fluid">
+  <h3 class="text-primary text-center">jQuery Playground</h3>
+  <div class="row">
+    <div class="col-xs-6">
+      <h4>#left-well</h4>
+      <div class="well" id="left-well">
+        <button class="btn btn-default target" id="target1">#target1</button>
+        <button class="btn btn-default target" id="target2">#target2</button>
+        <button class="btn btn-default target" id="target3">#target3</button>
+      </div>
+    </div>
+    <div class="col-xs-6">
+      <h4>#right-well</h4>
+      <div class="well" id="right-well">
+        <button class="btn btn-default target" id="target4">#target4</button>
+        <button class="btn btn-default target" id="target5">#target5</button>
+        <button class="btn btn-default target" id="target6">#target6</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+-->
+
+<!-- jQuary color,delete, move in script
+
+<script>
+  $(document).ready(function() {
+    $("#target1").css("color", "red");
+    $("#target1").prop("disabled", true);
+    $("#target4").remove();
+    $("#target2").appendTo("#right-well");
+
+  });
+</script>
+
+<div class="container-fluid">
+  <h3 class="text-primary text-center">jQuery Playground</h3>
+  <div class="row">
+    <div class="col-xs-6">
+      <h4>#left-well</h4>
+      <div class="well" id="left-well">
+        <button class="btn btn-default target" id="target1">#target1</button>
+        <button class="btn btn-default target" id="target2">#target2</button>
+        <button class="btn btn-default target" id="target3">#target3</button>
+      </div>
+    </div>
+    <div class="col-xs-6">
+      <h4>#right-well</h4>
+      <div class="well" id="right-well">
+        <button class="btn btn-default target" id="target4">#target4</button>
+        <button class="btn btn-default target" id="target5">#target5</button>
+        <button class="btn btn-default target" id="target6">#target6</button>
+      </div>
+    </div>
+  </div>
+</div>
+-->
+
+<!-- jQuary append, child, parent,target-nth-class
+
+<script>
+  $(document).ready(function() {
+    $("#target1").css("color", "red");
+    $("#target1").prop("disabled", true);
+    $("#target4").remove();
+    $("#target2").appendTo("#right-well");
+    $("#target5").clone().appendTo("#left-well");
+    $("#target1").parent().css("background-color", "red");
+    $("#right-well").children().css("color", "green");
+    $(".target:nth-child(2)").addClass("animated bounce");
+
+  });
+</script>
+
+<div class="container-fluid">
+  <h3 class="text-primary text-center">jQuery Playground</h3>
+  <div class="row">
+    <div class="col-xs-6">
+      <h4>#left-well</h4>
+      <div class="well" id="left-well">
+        <button class="btn btn-default target" id="target1">#target1</button>
+        <button class="btn btn-default target" id="target2">#target2</button>
+        <button class="btn btn-default target" id="target3">#target3</button>
+      </div>
+    </div>
+    <div class="col-xs-6">
+      <h4>#right-well</h4>
+      <div class="well" id="right-well">
+        <button class="btn btn-default target" id="target4">#target4</button>
+        <button class="btn btn-default target" id="target5">#target5</button>
+        <button class="btn btn-default target" id="target6">#target6</button>
+      </div>
+    </div>
+  </div>
+</div>
+-->
+
+<!-- JavaScript regular expression string searching
+ar myTest = (function() {
+  var testString = "Ada Lovelace and Charles Babbage designed the first computer and the software that would have run on it.";
+  var expressionToGetSoftware = /software/gi;
+
+  // Only change code below this line.
+
+  var expression = /and/gi;
+
+  // Only change code above this line.
+
+  return testString.match(expression).length;
+})();(function(){return myTest;})();
+
+var myTest = (function() {
+
+  var testString = "There are 3 cats but 4 dogs.";
+
+  // Only change code below this line.
+
+  var expression = /\d+/g;
+
+  // Only change code above this line.
+
+  return testString.match(expression).length;
+
+})();(function(){return myTest;})();
+
+\s will match any whitespace, and \S will match anything that isn't whitespace.
+-->
+
+<!-- constructor function to create objects
+var Car = function() {
+  this.wheels = 4;
+  this.engines = 1;
+  this.seats = 1;
+};
+
+// Only change code below this line.
+
+var MotorBike = function() {
+  this.wheels = 2;
+  this.engines = 1;
+  this.seats = 2;
+
+
+};
+
+-->
+
+<!-- Filter Arrays with filter
+ar oldArray = [1,2,3,4,5,6,7,8,9,10];
+var newArray = [];
+
+// Only change code below this line.
+
+newArray = oldArray.filter(function(val) {
+                          return val <= 5;
+                          });
+-->
+
+<!-- Sorting arryas - 
+Smallest to largest
+var array = [1, 12, 21, 2];
+
+// Only change code below this line.
+
+array.sort(function(a, b){
+  return a-b;
+});
+
+Largest to smallest
+var array = [1, 12, 21, 2];
+
+// Only change code below this line.
+
+array.sort(function(a, b){
+  return b-a;
+});
+-->
+
+<!-- reversing an array
+var array = [1,2,3,4,5,6,7];
+var newArray = [];
+
+// Only change code below this line.
+
+newArray = array.reverse();
+-->
+
+<!-- Concatenate Arrays with concat
+var oldArray = [1,2,3];
+var newArray = [];
+
+var concatMe = [4,5,6];
+
+// Only change code below this line.
+
+newArray = oldArray.concat(concatMe);
+-->
+
+<!-- Splitting strings
+var string = "Split me into an array";
+var array = [];
+
+// Only change code below this line.
+
+array = string.split(' ');
+-->
+
+<!-- Join Strings with join
+var joinMe = ["Split","me","into","an","array"];
+var joinedString = '';
+
+// Only change code below this line.
+
+joinedString = joinMe.join(" ");
+-->
+
+<!-- Challange: split reverse and join a string
+function reverseString(str) {
+  strArray = str.split("");
+  strArray = strArray.reverse();
+  str = strArray.join("")
+  //console.log(str)
+  return str;
+}
+
+reverseString("hello");
+-->
+
+<!-- Challange: factorialize a number
+function factorialize(num) {
+  var temp = 1
+  for (i=1;i<=num;i++) {
+    temp = temp*i;
+  }
+  console.log(temp)
+  num = temp;
+  return num;
+}
+
+factorialize(5);
+-->
+
+<!-- Challange: Check for palindromes (removes white spaces, all special characters, and _)
+function palindrome(str) {
+  str = str.toLowerCase()
+  str = str.replace(/\W/g, '')
+  str = str.replace("_","")
+  //str = str.replace(/[^\w\s]/gi, "")
+  strArray = str.split("");
+  strArray = strArray.reverse();
+  str2 = strArray.join("");
+  console.log(str, str2)
+  if (str2 === str) {
+    return true;
+  }
+  else {
+    return false
+  }
+  
+}
+
+palindrome("My age is 0, 0 si ega ym.")
+palindrome("A man, a plan, a canal. Panama")
+palindrome("0_0 (: /-\ :) 0-0");
+-->
+
+<!-- Challange: find the longest word in a string
+function findLongestWord(str) {
+  words = str.split(" ")
+  max = 0
+  for (i=0;i<words.length;i++){
+    if (words[i].length >= max){
+      max = words[i].length
+    }
+  }
+  return max;
+}
+
+findLongestWord("The quick brown fox jumped over the lazy dog")
+-->
+
+<!-- Challange: capatilze each starting letter of each word in a string
+  str = str.toLowerCase()
+  str = str.split(" ")
+  
+  for (i=0;i<str.length;i++){
+    console.log(str[i].replace(str[i][0],str[i][0].toUpperCase()))
+    str[i] = str[i].replace(str[i][0],str[i][0].toUpperCase())
+  }
+  str = str.join(" ")
+  return str;
+}
+
+
+console.log(titleCase("I'm a little tea pot"))
+-->
+
+<!-- Challange: find largest value if each of a set of arrays inside an array
+unction largestOfFour(arr) {
+  var max = []
+  for (i=0;i<arr.length;i++){
+    max[i] = 0;
+    for (j=0;j<=arr[i].length;j++){
+      if (max[i]<=arr[i][j]){
+        max[i] = arr[i][j]
+      }
+    }
+  }
+  return max;
+}
+
+largestOfFour([[4, 5, 1, 3], [13, 27, 18, 26], [32, 35, 37, 39], [1000, 1001, 857, 1]]);
+-->
+
+<!-- Challange: find if last characters are a set character(s)
+function end(str, target) {
+  //console.log(str.substr(-1))
+  if (str.substr(-target.length)===target) {
+    return true;
+  }
+  else {
+    return false
+  }
+}
+
+end("Bastion", "n");
+-->
+
+<!-- Challange: repeat a string x number of times 
+function repeat(str, num) {
+  var strRepeated =""
+  if (num>=0){
+    for (i=0;i<num;i++){
+      strRepeated = strRepeated.concat(str)
+    }
+    return strRepeated;
+  }
+  else {
+    return strRepeated;
+  }
+}
+
+
+repeat("abc", 3);
+-->
+
+<!-- Challange: truncate a string that is longer than x with "..." lots of exceptions
+function truncate(str, num) {
+  if (str.length==num) {
+  return str;
+  }
+  else if (str.length<num) {
+    return str;
+  }
+  else if (num > 3){
+  str = str.slice(0,num-3)
+  str = str.concat("...")
+  return str;  
+  }
+  else {
+  str = str.slice(0,num)
+  str = str.concat("...")
+  return str;
+  }
+}
+
+truncate("A-tisket a-tasket A green and yellow basket", 11);
+-->
+
+<!-- Challange: Break arrays into chucks of a given size (handles leftoevers and large chunks)
+function chunk(arr, size) {
+  var arr2 = [];
+  if (arr.length%size===0){
+  //console.log(Math.floor(arr.length/size))
+  for(i=0;i<arr.length;i+=size){
+      var chunk = arr.slice(i,i+size); 
+      console.log(chunk);
+      arr2.push(chunk);
+   }
+  }
+  else{
+   //console.log(Math.floor(arr.length/size))
+  for(i=0;i<arr.length;i+=size){
+      var chunk = arr.slice(i,i+size); 
+      arr2.push(chunk);
+      
+    }
+    //arr2.push(arr.slice(arr2.length,arr.length))
+  }
+  return arr2;
+}
+
+chunk(["a", "b", "c", "d"], 2);
+//chunk([0, 1, 2, 3, 4, 5, 6], 3) should return [[0, 1, 2], [3, 4, 5], [6]].
+//chunk([0, 1, 2, 3, 4, 5, 6, 7, 8], 4) should return [[0, 1, 2, 3], [4, 5, 6, 7], [8]]. 
+
+-->
+
+<!-- Challange: cut array after length all passed as one array
+function slasher(arr, howMany) {
+      //arr.slice()
+  for (i=0;i<howMany;i++){
+      //console.log(arr,i)
+      arr.splice(0,1);
+  }
+  return arr;
+}
+
+slasher([1, 2, 3], 2);
+-->
+
+<!-- Challange: Check every letter in an array and see if each is in another array
+function mutation(arr) {
+  arr[0] = arr[0].toLowerCase();
+  arr[1] = arr[1].toLowerCase();
+  //console.log(arr[0],arr[1])
+  splitArr = arr[1].split("");
+  for (i=0;i<splitArr.length;i++){
+    console.log(splitArr[i]);
+    if (arr[0].indexOf(splitArr[i])===-1){
+      return false;
+    }
+  }
+  return true;
+}
+
+//console.log(mutation(["Hello", "hello"]))
+mutation(["hello", "hey"]);
+-->
+
+<!-- Challange: Filter all falsy values (false, null, 0, "", undefined, and NaN)
+DIDDNT WORK BUT DOES PARTUALLY
+function bouncer(arr) {
+  function filterArr(arr){
+    return arr > 0 || isNaN(arr)===true;
+  }
+  arr = arr.filter(filterArr)
+  return arr;
+}
+
+console.log(bouncer([7, "ate", "", false, 9]))
+console.log(bouncer([false, null, 0, NaN, undefined, ""]))
+
+SO USED THIS
+function bouncer(arr) {
+ var filteredArray = arr.filter(Boolean);
+  return filteredArray;
+}
+
+console.log(bouncer([7, "ate", "", false, 9]))
+console.log(bouncer([false, null, 0, NaN, undefined, ""]))
+-->
+
+<!-- Challange: filter out numbers from an array pass as all one big array
+function destroyer(arr) { 
+     arr2 = arguments[0];
+     for (i=1;i<arguments.length;i++){
+       var thisCase = arguments[i];
+       
+     arr2 =  arr2.filter(function filt(val) {
+       console.log(val != thisCase);
+         return val != thisCase;
+       }) ;
+     }
+  return arr2;
+}
+
+
+destroyer([1, 2, 3, 1, 2, 3], 2, 3);
+-->
+
+<!-- Challange: find out at position to insert a number into a sorted numberical arry
+function where(arr, num) {
+  arr.sort(function compareNumbers(a, b) {
+  return a - b;
+});
+  console.log(arr);
+  for (i=1;i<=arr.length;i++){
+     //console.log(i,arr[i])
+   if( num===arr[0]){
+     return 0
+   }
+   else if (num>=arr[i-1] && num<=arr[i]){
+      return i;
+   }
+  }
+
+    return arr.length;
+
+}
+
+
+where([40, 60], 50);
+where([3, 10, 5], 3);
+-->
+
+<!-- Challange: Letter cypher. Pass a string, shift each letter by 13 letters forward, wrap around
+function rot13(str) { // LBH QVQ VG!
+   str2 = "";
+   for(i=0;i<str.length;i++){
+      /*
+      if (str.charCodeAt(i)> 47 && str.charCodeAt(i) < 58){
+         //console.log("contains a number")
+      str2 = crt2.concat(str[i])
+       }
+       */
+      if (str.charCodeAt(i) > 64 && str.charCodeAt(i) <= 77){
+      //console.log(str.charCodeAt(i))   
+      var temp = str.charCodeAt(i)+13;
+         //console.log(temp)
+         
+         //console.log(String.fromCharCode(temp))
+         //temp = temp+13
+         //console.log(String.fromCharCode(temp))
+         //console.log(str[i])
+         str2 = str2.concat(String.fromCharCode(temp))
+       }
+      else if (str.charCodeAt(i) > 77 && str.charCodeAt(i) < 91){
+         var temp = str.charCodeAt(i)-26+13;
+         str2 = str2.concat(String.fromCharCode(temp));
+      }
+      
+       else {
+          str2 = str2.concat(str[i]);
+       }       
+   }
+   
+  return str2;
+}
+
+console.log(rot13("SERR CVMMN!"))
+console.log(rot13("SERR PBQR PNZC"))
+rot13("SERR PBQR PNZC");
+-->
+
+f<!--
+
+-->
