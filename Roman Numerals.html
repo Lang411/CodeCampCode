@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Roman Numerals</title>
+		
+		<meta charset="utf-8" />
+	<!-- jQuery library -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+	
+<!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+
+<!-- Optional theme -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap-theme.min.css" integrity="sha384-fLW2N01lMqjakBkx3l/M9EahuwpSfeNvV63J5ezn3uZzapT0u7EYsXMjQV+0En5r" crossorigin="anonymous">
+
+<!-- Latest compiled and minified JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+	
+	
+	<style>
+		body {
+		padding-top: 150px;
+		text-align:center;
+		}
+		
+		label {
+		font-size: 150%;
+		}
+		
+		.display-text {
+			font-size: 150%;
+		}
+		
+		}
+		
+	</style>
+	</head>
+	
+	<body>
+		<!--
+				<div class="navbar navbar-inverse">
+			<div class="container left">
+				<div class="navbar-header">
+					<a href="" class="navbar-brand">Lang Kenney</a>
+					<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+						<span class="sr-only">Toggle navigations</span>
+						
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+					</button>
+				</div>
+				<div class="collapse navbar-collapse">
+					<ul class="nav navbar-nav">
+						<li><a href="">About me</a></li>
+						<li><a href="">Background</a></li>
+						<li><a href="">Projects</a></li>
+						<li><a href="">Contact info</a></li>
+									
+					</ul>
+				</div>	
+			</div>
+			
+		</div>	
+ -->
+
+	<div class="container">
+		<h1>Convert any number into a Roman Numberal</h1>
+	
+		<form>
+			<div class="form-inline">
+				<label for="username">Number:</label>
+				<input type="text" class="form-control" id="inputNumber" name="inputNumber" placeholder="Number"/>
+				<input type="button" value="Convert &rarr;" class="btn btn-default" id="convertButton"/>
+				<label>Roman Numerals:</label>
+				<text class="display-text" id="display"></text>
+			</div>
+
+		</div>
+	</form>
+	
+	</div>		
+	</body>	
+		
+		<script type="text/javascript">
+			returnNum = '';
+			//$(document).ready(function() {
+				$("#convertButton").click(function (){
+				var a = document.getElementById("inputNumber").value
+				convert(a);
+			})
+			//});
+			
+			
+			function convert(num) {
+				
+					var stdNum = num;
+	  			var numb = num;
+	 				var romanNum = [];
+	  
+	    		while (numb>0){
+	      
+	    		//1000's
+	    		if (Math.floor(numb/1000)>0){
+	      //console.log( Math.floor(numb/1000)+' X 1000');
+	      for (i=0;i<Math.floor(numb/1000);i++){
+	        console.log(i)
+	        romanNum.push('M');
+	        numb = numb-1000;
+	      }
+	    }
+	    //100's
+			else if (Math.floor(numb/100)>0){
+      	//console.log( Math.floor(numb/100)+' X 100');
+      	var symbols = ['C','CC','CCC','CD','D','DC','DCC','DCCC','CM'];
+      	romanNum.push(symbols[Math.floor(numb/100)-1]);
+      	numb = numb-100*Math.floor(numb/100);
+
+			}
+      //10's
+      else if (Math.floor(numb/10)>0){
+      	//console.log( Math.floor(numb/10)+' X 10');
+      	var symbols = ['X','XX','XXX','XL','L','LX','LXX','LXXX','XC'];
+      	romanNum.push(symbols[Math.floor(numb/10)-1]);
+      	numb = numb-10*Math.floor(numb/10);
+      }
+      //1's
+      else {
+      	//console.log(numb+' X 1');
+      	var symbols = ['I','II','III','IV','V','VI','VII','VIII','IX'];
+      	romanNum.push(symbols[numb-1]);
+      	numb = 0;
+      }
+      }
+      num = romanNum.join('');
+      console.log(num);
+      display.innerHTML = num;
+      return returnNum;
+      }
+			
+			</script>
+
+</html>
