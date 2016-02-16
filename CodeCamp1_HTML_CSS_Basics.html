@@ -1016,6 +1016,455 @@ console.log(rot13("SERR PBQR PNZC"))
 rot13("SERR PBQR PNZC");
 -->
 
-f<!--
+<!-- Sum all numbers between to numbers (uses reduce,push,min, max)
+function sumAll(arr) {
+  totalArr = [];
+  var total = arr[0]+arr[1];
+ //totalArr.push(total)
+  for (i=Math.min(arr[0],arr[1])+1;i<Math.max(arr[0],arr[1]);i++){
+    totalArr.push(i);
+  }
+  totalArr = totalArr.reduce(function(previousValue, currentValue, currentIndex, array) {
+    return previousValue + currentValue;
+  });
+  //console.log(totalArr)
+  total=total+totalArr
+  return total;
+}
+
+sumAll([1, 4]);
+
+-->
+
+<!-- find if a number is NOT in both arrays (uses push, indexof)(works on both numbers and strings)
+function diff(arr1, arr2) {
+  var newArr = [];
+
+  for (i=0;i<arr2.length;i++){
+    if (arr1.indexOf(arr2[i])===-1){
+      newArr.push(arr2[i]);
+    }
+  }
+  for (i=0;i<arr1.length;i++){
+    if (arr2.indexOf(arr1[i])===-1){
+      newArr.push(arr1[i]);
+    }
+  }
+  return newArr
+}
+
+diff([1, 2, 3, 5], [1, 2, 3, 4, 5]);
+-->
+
+<!-- Convert a number into a roman numberal
+	function convert(num) {
+  var numb = num;
+  var romanNum = [];
+  
+    while (numb>0){
+      
+    //1000's
+    if (Math.floor(numb/1000)>0){
+      //console.log( Math.floor(numb/1000)+' X 1000');
+      for (i=0;i<Math.floor(numb/1000);i++){
+        console.log(i)
+        romanNum.push('M');
+        numb = numb-1000;
+      }
+    }
+    //100's
+    else if (Math.floor(numb/100)>0){
+       //console.log( Math.floor(numb/100)+' X 100');
+       var symbols = ['C','CC','CCC','CD','D','DC','DCC','DCCC','CM'];
+       romanNum.push(symbols[Math.floor(numb/100)-1]);
+       numb = numb-100*Math.floor(numb/100);
+       
+    }
+     //10's
+      else if (Math.floor(numb/10)>0){
+      //console.log( Math.floor(numb/10)+' X 10');
+      var symbols = ['X','XX','XXX','XL','L','LX','LXX','LXXX','XC'];
+      romanNum.push(symbols[Math.floor(numb/10)-1]);
+      numb = numb-10*Math.floor(numb/10);
+    }
+      //1's
+     else {
+     //console.log(numb+' X 1');
+     var symbols = ['I','II','III','IV','V','VI','VII','VIII','IX'];
+     romanNum.push(symbols[numb-1]);
+     numb = 0;
+     }
+    }  
+ num = romanNum.join('');
+ return num;
+}
+
+console.log(convert(3999))
+
+
+
+
+-->
+
+<!-- Where art thou -filter objects for a set of keys
+CHEAT - I HAD TO GOOGLE THE ANSWER DIRECTLY
+function where(collection, source) {
+  var arr = [];
+  keys = Object.keys(source);
+  console.log('keys:'+keys)
+  arr = collection.filter(function(obj){
+    return keys.every(function(key){
+      console.log('haspropterty '+key+':'+obj.hasOwnProperty(key))
+      console.log('obj[key]:'+obj[key])
+      console.log('source[key]:'+source[key])
+    return obj.hasOwnProperty(key) && obj[key]=== source[key]
+  });
+  });
+
+  return arr;
+}
+
+console.log(where([{ first: "Romeo", last: "Montague" }, { first: "Mercutio", last: null }, { first: "Tybalt", last: "Capulet" }], { last: "Capulet" }))
+console.log(where([{ "a": 1 }, { "a": 1 }, { "a": 1, "b": 2 }], { "a": 1 }))// should return [{ "a": 1 }, { "a": 1 }, { "a": 1, "b": 2 }].
+console.log(where([{ "a": 1, "b": 2 }, { "a": 1 }, { "a": 1, "b": 2, "c": 2 }], { "a": 1, "b": 2 }))// should return [{ "a": 1, "b": 2 }, { "a": 1, "b": 2, "c": 2 }].
+console.log(where([{ "a": 1, "b": 2 }, { "a": 1 }, { "a": 1, "b": 2, "c": 2 }], { "a": 1, "c": 2 }))// should return [{ "a": 1, "b": 2, "c": 2 }]. 
+
+
+
+THIS CODE DOESNT WORK BUT IS A GOOD EXPAMPLE OF ACCESSING OBJECTS
+function where(collection, source) {
+  var arr = [];
+  console.log('Searching for: '+Object.keys(source));
+  a = Object.keys(source)
+  console.log('Searching for matches on:'+a.length+' thing')
+  //console.log('There are this many object in this collection:'+Object.keys(collection))
+  
+  for (var keyS in source) {
+    if (source.hasOwnProperty(keyS)) {
+    console.log('Seaching through:'+keyS)
+    console.log('Source:'+source[keyS])
+    
+     for (var keyC in collection) {
+      if (collection.hasOwnProperty(keyC)) {
+      //console.log('keyC:'+keyC)
+      console.log('Collection object being searched:'+collection[keyC][keyS])
+      
+      if (collection[keyC][keyS]===source[keyS]){
+        console.log('Found a match:'+collection[keyC])
+            arr.push(collection[keyC]);        
+      } 
+      }
+    }
+    }
+   }
+  
+
+  
+  return arr;
+}
+
+
+
+console.log(where([{ first: "Romeo", last: "Montague" }, { first: "Mercutio", last: null }, { first: "Tybalt", last: "Capulet" }], { last: "Capulet" }))
+console.log('------')
+console.log(where([{ "a": 1 }, { "a": 1 }, { "a": 1, "b": 2 }], { "a": 1 }))
+console.log('------')
+console.log(where([{ "a": 1, "b": 2 }, { "a": 1 }, { "a": 1, "b": 2, "c": 2 }], { "a": 1, "b": 2 }))
+console.log('------')
+console.log(where([{ "a": 1, "b": 2 }, { "a": 1 }, { "a": 1, "b": 2, "c": 2 }], { "a": 1, "c": 2 }) )
+
+//where([{ "a": 1, "b": 2 }, { "a": 1 }, { "a": 1, "b": 2, "c": 2 }], { "a": 1, "b": 2 }) should return [{ "a": 1, "b": 2 }, { "a": 1, "b": 2, "c": 2 }].
+//where([{ "a": 1, "b": 2 }, { "a": 1 }, { "a": 1, "b": 2, "c": 2 }], { "a": 1, "c": 2 }) should return [{ "a": 1, "b": 2, "c": 2 }]. 
+
+/*
+a = [{ first: "Romeo", last: "Montague" }, { first: "Mercutio", last: null }, { first: "Tybalt", last: "Capulet" }]
+console.log(a[1].last)
+console.log(Object.keys(a[1]))
+
+source = { last: "Capulet" }
+console.log(source.last)
+
+b2 = [{ "a": 1, "b": 2 }, { "a": 1 }, { "a": 1, "b": 2, "c": 2 }]
+b =  { "a": 1, "b": 2 }
+console.log('-------')
+for (var key in a) {
+  console.log(a[key])
+}
+console.log(Object.keys(b))
+*/
+-->
+
+<!-- Replace workds in a sentance. Keeping Case of the starting letters
+function myReplace(str, before, after) {
+  if (before[0]===before[0].toUpperCase()){
+    //console.log('uppercase');
+    after = after[0].toUpperCase()+after.slice(1);
+  }
+  //a = ['/',before,'/i'];
+  //before = a.join('')
+  before2 = eval('/'+before+'/i');
+  //console.log(before);
+  str = str.replace(before2, after);
+  return str;
+}
+
+myReplace("A quick brown fox jumped over the lazy dog", "jumped", "leaped");
+-->
+
+<!-- Pig Latin - string & array movement (push,join,split)
+function translate(str) {
+  var arr = str.split('');
+  var arr2 = [];
+  function isVowel(x) {  return /[aeiouAEIOU]/.test(x); }
+  //console.log(isVowel('a'))
+  vowels = ['a','e','i','o','u'];
+  if (isVowel(arr[0])){
+      //console.log('First letter is a vowel')
+      arr.push('way');
+      str = arr.join('');
+      return str;
+  }
+
+  for (i=0;i<arr.length;i++){
+     if (isVowel(arr[i])!=true){
+      console.log('letter is a consenent:'+arr[i]);
+      arr2.push(arr[i]);
+      //console.log(arr2)
+    }
+    else {
+      console.log('This letter is a vowel:'+arr[i]);
+      //console.log(arr)
+      arr3 = arr.slice(i,arr.length);
+      //console.log('arr3:'+arr3)
+      arr3 = arr3.concat(arr2);
+      arr3 = arr3.concat(['a','y']);
+      //console.log(arr3)
+      break;
+    }   
+  }
+  str = arr3.join('');
+  return str;
+}
+
+translate("consonant");
+
+-->
+
+<!-- DNA pairs: pushing each pair into a sub arry inside a big array
+function pair(str) {
+  var arr = [];
+  str = str.split('');
+  console.log(str)
+  for (i=0;i<str.length;i++){
+  if (str[i]==='A'){
+    str[i]=['A']
+    str[i].push('T')
+  }
+  else if (str[i]==='T'){
+    str[i]=['T']
+    str[i].push('A')
+  }
+  else if (str[i]==='C'){
+    str[i]=['C']
+    str[i].push('G')
+   }
+   else if (str[i]==='G'){
+     str[i]=['G']
+    str[i].push('C');
+
+   }
+    
+  }
+  return str;
+}
+
+pair("GCG");
+-->
+
+<!-- Find if there is a missing increasing alphbetical letter in a string
+Uses     String.charCodeAt()& String.fromCharCode()
+function fearNotLetter(str) {
+  arr = [];
+  //console.log(str.length)
+  Start = str.charCodeAt(0);
+  End = str.charCodeAt(str.length-1);
+  //console.log(String.fromCharCode(End))
+  for (i=0;i<str.length;i++){
+    if (i===0){
+      var j = i;
+    }
+    var str2 = String.fromCharCode(Start + i)
+    console.log('----'+i+'----');
+    console.log('str:'+str2);
+    console.log('str:'+str[j]);
+    if (str2 !== str[j]){
+      console.log('Found one not in string!')
+      arr.push(str2);
+      console.log(arr)
+      
+    }
+    else {
+      j++
+    }
+  }
+  if (arr == ""){
+    return undefined
+    
+  } 
+  else {
+    str = arr.join('');
+    return str;
+  }
+  return str;
+}
+
+
+fearNotLetter("abce");
+//fearNotLetter("abce") should return "d".
+//fearNotLetter("abcdefghjklmno") should return "i".
+//fearNotLetter("bcd") should return undefined.
+//fearNotLetter("yz") should return undefined. 
+-->
+
+<!-- return true if paramater is a boolean
+function boo(bool) {
+  // What is the new fad diet for ghost developers? The Boolean.
+  if (typeof bool === 'boolean'){
+    return true;
+  } 
+  else {
+    return false;
+  }
+  //return bool;
+
+}
+
+/*boo(true) should return true.
+boo(false) should return true.
+boo([1, 2, 3]) should return false.
+boo([].slice) should return false.
+boo({ "a": 1 }) should return false.
+boo(1) should return false.
+boo(NaN) should return false.
+boo("a") should return false.
+boo("true") should return false.
+boo("false") should return false. 
+*/
+-->
+
+<!-- United arrays: combine and unknown number of arrays. Uses filter to find differences
+function unite(arr1, arr2, arr3) {
+  var newArr = arguments[0];
+  for (i=0;i<arguments.length;i++){
+    console.log('----'+i+'-----');
+    console.log(arguments[i]);
+
+    diff = arguments[i].filter(function(i) {return newArr.indexOf(i) < 0;})
+    console.log('diff:'+diff)
+    for (j=0;j<diff.length;j++){
+      newArr.push(diff[j])
+    }
+    console.log('newArr:'+newArr)
+   } 
+  return newArr
+  }
+  
+//unite([1, 3, 2], [5, 2, 1, 4], [2, 1]) should return [1, 3, 2, 5, 4].
+//unite([1, 3, 2], [1, [5]], [2, [4]]) should return [1, 3, 2, [5], [4]].
+//unite([1, 2, 3], [5, 2, 1]) should return [1, 2, 3, 5].
+//unite([1, 2, 3], [5, 2, 1, 4], [2, 1], [6, 7, 8]) should return [1, 2, 3, 5, 4, 6, 7, 8]. 
+-->
+
+<!-- convert characters to HTML characters (&,<,>,',")
+function convert(str) {
+  str = str.split('');
+  //console.log(str)
+  for (i=0;i<str.length;i++){
+    if (str[i]=='&'){
+      str[i] = '&amp;';
+    }
+    else if (str[i]=='<'){
+      str[i] = '&lt;';
+    }
+    else if (str[i]=='>'){
+      str[i] = '&gt;';
+    }
+    else if (str[i]=='\"'){
+       str[i] = '&quot;';
+    }
+    else if (str[i]=='\''){
+      str[i] = '&apos;';
+    }
+  }
+  str = str.join('');
+  return str;
+}
+
+//convert("Dolce & Gabbana") should return Dolce &?amp; Gabbana.
+//convert("Hamburgers < Pizza < Tacos") should return Hamburgers &?lt; Pizza &?lt; Tacos.
+//convert("Sixty > twelve") should return Sixty &?gt; twelve.
+//convert('Stuff in "quotation marks"') should return Stuff in &?quot;quotation marks&?quot;.
+//convert("Shindler's List") should return Shindler&?apos;s List.
+//convert("<>") should return &?lt;&?gt;.
+//convert("abc") should return abc. 
+-->
+
+<!-- Spinal tap: replace spaces,underscores, and capitals with a dash
+function spinalCase(str) {
+  // "It's such a fine line between stupid, and clever."
+  // --David St. Hubbins
+  str = str.replace(/([A-Z])/g, ' $1').trim()
+  str = str.replace(/\s/g,'-');
+  str = str.replace(/_/g,'-');
+  str = str.replace(/--/g,'-');
+  str = str.toLowerCase();
+
+  return str;
+}
+
+console.log(spinalCase("This Is Spinal Tap"))
+console.log(spinalCase("The_Andy_Griffith_Show"))// should return "the-andy-griffith-show".)
+console.log(spinalCase("thisIsSpinalTap"))// should return "this-is-spinal-tap".
+console.log(spinalCase("Teletubbies Say Eh-oh"))// should return "teletubbies-say-eh-oh". 
+
+
+/*
+spinalCase("This Is Spinal Tap") should return "this-is-spinal-tap".
+
+spinalCase("The_Andy_Griffith_Show") should return "the-andy-griffith-show".
+
+
+
+function spinalCase(str) {
+  // "It's such a fine line between stupid, and clever."
+  // --David St. Hubbins
+  str = str.replace(/-/g,' ');
+  //str = str.replace(/\s+[AZ]/g,'');
+  str = str.replace(/[^a-zA-Z]/g,'');
+  console.log(str)
+  str = str.split(/(?=[A-Z])/);
+  
+  console.log(str)
+  //str = str.split('/^[A-Z]*$/');
+  str[0] = str[0].toLowerCase();
+  for (i=1; i<str.length; i++){
+    str2 = str[i].split('');
+    console.log(str2)
+    console.log(str2[0])
+    if (str2[0]==str2[0].toUpperCase()) {
+       str2[0] ='-'+str2[0].toLowerCase();
+      console.log(str2)
+     }
+    
+    str[i] = str2.join('');
+  }
+  
+  str = str.join('');
+  return str;
+}
+*/
+-->
+
+<!--
 
 -->
